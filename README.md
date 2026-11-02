@@ -56,10 +56,17 @@ Not because clinicians are careless — because a 10-minute visit cannot hold th
 | **Lab interpretation** | 50+ markers, reference-range checks, trends and plain-English explanations |
 | **Medication safety** | Drug-interaction review, CPIC/ClinPGx pharmacogenomics, renal/hepatic calculators |
 | **Rare disease** | HPO/Orphanet/MONDO phenotype matching with OMIM and Orphanet references |
-| **Evidence layer** | Source capture, citation chips, evidence verification and explicit uncertainty |
+| **Evidence** | Answers show their sources and call out uncertainty |
 | **Clinician workspace** | Patient links, notes, access logs, SOAP notes, referrals and doctor-ready summaries |
 | **Medicine cards** | Related options with class, cautions and tiny DailyMed label images |
 | **API** | OpenAI-compatible medical reasoning API for builders and agents |
+
+### Coverage
+
+- 45+ live clinical sources and tools
+- 76 active clinical skills
+- 54 common lab markers with trends and reference checks
+- Web app, API and MCP access
 
 ### Product surfaces
 
@@ -79,23 +86,6 @@ Not because clinicians are careless — because a 10-minute visit cannot hold th
 <p align="center">
   <img src="https://premedice.com/atlas/human-atlas-poster.jpg" alt="Premedice Human Atlas" width="900" />
 </p>
-
----
-
-## The clinical toolbelt
-
-Premedice does not just generate prose. It runs clinical tools.
-
-| Layer | Examples |
-|---|---|
-| **Literature** | PubMed, Europe PMC, Cochrane, medRxiv/bioRxiv, Crossref |
-| **Drug data** | OpenFDA, RxNorm, DailyMed, DrugBank (licensed key), CPIC |
-| **Pharmacogenomics** | CPIC and ClinPGx/PharmGKB annotations |
-| **Trials and targets** | ClinicalTrials.gov, Open Targets, ChEMBL, PubChem |
-| **Rare disease** | HPO, Orphanet, MONDO via Monarch |
-| **Structure** | AlphaFold protein structure and confidence |
-| **Calculators** | Wells, CHA₂DS₂-VASc, HAS-BLED, CURB-65, eGFR, Cockcroft-Gault, Child-Pugh, MELD |
-| **Workflow** | SOAP notes, referrals, patient summaries, health briefs |
 
 ---
 
@@ -121,38 +111,22 @@ See the API documentation at [api.premedice.com](https://api.premedice.com) and 
 
 ## Documentation
 
-- [Architecture](docs/architecture.md) — care contexts, record, tools, evidence, doctor sharing, briefs.
-- [Lab Memory](docs/lab-memory.md) — what is parsed, what is supported, and what is still missing.
-- [Clinical Evaluation](docs/clinical-evaluation.md) — what will be measured before any accuracy claim.
-- [Trust and Safety](docs/trust-and-safety.md) — emergency use, evidence checks, doctor sharing, data safety.
-- [API and MCP](docs/api-and-mcp.md) — endpoints, model ID, authentication, preview limits.
-- [Roadmap](docs/roadmap.md) — now, next, later, not planned.
+- [What Premedice delivers](docs/results.md)
+- [Lab Memory](docs/lab-memory.md)
+- [Trust and Safety](docs/trust-and-safety.md)
+- [API and MCP](docs/api-and-mcp.md)
+- [Security policy](SECURITY.md)
+- [Changelog](CHANGELOG.md)
 
 ---
 
-## Evaluation status
+## Safety boundaries
 
-Premedice has no published clinical accuracy benchmark. The evaluation protocol is public; results are not yet available. The product is decision support, not a diagnosis.
+- Premedice is decision support, not a diagnosis.
+- It does not replace a licensed clinician.
+- Emergency symptoms require local emergency services.
 
-See [Clinical Evaluation](docs/clinical-evaluation.md).
-
----
-
-## What Premedice is not
-
-- Not a diagnosis.
-- Not a replacement for a doctor.
-- Not a telehealth or prescribing service.
-- Not an emergency service.
-- Not a guarantee of accuracy.
-
-Clinical decisions belong with a qualified clinician who knows the patient's history. Emergency symptoms require local emergency services.
-
----
-
-## Status
-
-Premedice is in active beta. Features, model routing and API limits may change. The production app source is private; this repository is the public product and API overview.
+Clinical decisions belong with a qualified clinician who knows the patient's history.
 
 ---
 

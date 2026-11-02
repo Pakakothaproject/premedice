@@ -1,8 +1,8 @@
 # API and MCP
 
-**Status:** Preview
+**Status:** Beta
 **Base URL:** `https://api.premedice.com`
-**Canonical model ID:** `Premedice/Premed-4`
+**Model ID:** `Premedice/Premed-4`
 
 ---
 
@@ -12,7 +12,7 @@
 Authorization: Bearer pm_live_YOUR_KEY
 ```
 
-Never publish a live key.
+Keep live keys private.
 
 ## Chat completions
 
@@ -36,25 +36,23 @@ curl https://api.premedice.com/v1/chat/completions \
 | Endpoint | Purpose |
 |---|---|
 | `GET /v1/models` | List the public model ID |
-| `POST /v1/labs/interpret` | Structured lab-panel interpretation |
+| `POST /v1/labs/interpret` | Lab-panel interpretation |
 | `POST /v1/evidence/verify` | Verify a claim against supplied sources |
-| `POST /mcp` | MCP server for other AI clients |
+| `POST /mcp` | MCP server for AI clients |
 
 ## MCP
 
-The MCP endpoint uses the same `pm_live_*` key. It exposes Premedice as a medical research tool for compatible clients.
+The MCP endpoint uses the same `pm_live_*` key. It lets compatible AI clients delegate medical research to Premedice.
 
-## Preview limits
+## Usage
 
-- No public uptime SLA.
-- No public latency SLA.
-- Rate limits and response fields may change.
+- Use a key with the appropriate plan.
+- Rate limits apply per key.
 - Do not use the API for emergency care.
 - Do not send PHI without an appropriate agreement.
-- The API is decision support, not a diagnosis.
+- Clinical decisions remain with a licensed professional.
 
 ## Documentation
 
 - [Premedice 4 API docs](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/api.md)
 - [Premedice 4 model card](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/model-card.md)
-- [Reliability](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/reliability.md)

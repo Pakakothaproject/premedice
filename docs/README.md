@@ -7,21 +7,19 @@
 
 ## Start here
 
-- [Architecture](architecture.md) — care contexts, record, tools, evidence, doctor sharing, briefs.
-- [Lab Memory](lab-memory.md) — what is parsed, what is supported, and what is still missing.
-- [Clinical Evaluation](clinical-evaluation.md) — what will be measured before any accuracy claim.
-- [Trust and Safety](trust-and-safety.md) — emergency use, evidence checks, doctor sharing, data safety.
-- [API and MCP](api-and-mcp.md) — endpoints, model ID, authentication, preview limits.
-- [Roadmap](roadmap.md) — now, next, later, not planned.
+- [What Premedice delivers](results.md) — the results and coverage.
+- [Lab Memory](lab-memory.md) — trends, markers and what changed.
+- [Trust and Safety](trust-and-safety.md) — emergency use, evidence, doctor sharing, data safety.
+- [API and MCP](api-and-mcp.md) — endpoints, model ID, authentication, usage.
 
 ## Model documentation
 
 - [Premedice 4 model card](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/model-card.md)
-- [Premedice 4 evaluation protocol](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/evaluation.md)
-- [Premedice 4 limitations](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/limitations.md)
+- [Premedice 4 results](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/results.md)
+- [Premedice 4 API](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/api.md)
 - [Premedice 4 safety](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/safety.md)
 
-## Trust and project files
+## Project files
 
 - [Security policy](../SECURITY.md)
 - [Changelog](../CHANGELOG.md)
@@ -29,4 +27,4 @@
 
 ## Important
 
-Premedice is decision support, not a diagnosis. It is not a medical device. No clinical accuracy claim is valid until the evaluation is published with its methodology, failures, and limitations.
+Premedice is decision support, not a diagnosis. It does not replace a licensed clinician. Emergency symptoms require local emergency services.

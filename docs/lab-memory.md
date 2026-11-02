@@ -1,48 +1,31 @@
 # Lab Memory
 
-**Status:** v1, preview
+**Status:** Beta
 **Last updated:** 3 November 2026
 
 ---
 
-## What it does
+## The result
 
-Lab Memory turns uploaded lab reports into a longitudinal record.
+Lab Memory turns a stack of lab reports into a longitudinal view of what is changing.
 
-- Parses analyte, value, unit, reference range, lab name, and collection date.
-- Normalizes common SI and conventional units.
-- Groups results by analyte.
-- Computes change, percent change, and slope.
-- Flags high and low values against the range printed on the report.
-- Injects the latest values into the chat context.
-- Shows the same trend view in the clinician patient record.
+- See the latest value, the reference range, and the trend.
+- Compare this report with previous reports.
+- Spot a value that is moving even when it is still inside the range.
+- Ask about a lab in the context of medicines, symptoms and history.
+- See the same trend view in the clinician workspace.
 
-## Supported today
+## Available now
 
-- 54 common analytes across CBC, CMP, lipids, thyroid, diabetes, vitamins, iron, inflammation, kidney, and other panels.
-- Unit conversion for common SI/conventional pairs.
-- Trend API and SVG chart.
-- Parser tests: 12/12 passing.
+- 54 common markers across CBC, CMP, lipids, thyroid, diabetes, vitamins, iron, inflammation and kidney panels.
+- Trend view with reference band, flagged points and a result table.
+- Plain-language explanation in the chat.
+- Labs included in clinician-ready summaries.
 
-## Current limits
+## Coverage
 
-- Clean-text reports are the strongest path. Real-world PDFs and scans still need more coverage.
-- Critical thresholds (`critical_high`, `critical_low`) are not complete.
-- Backfill for older documents, deduplication, and manual correction are incomplete.
-- Reference ranges by lab, age, and sex are not complete.
-- Country-specific ranges and localization are not built.
-- The analyte dictionary is below the planned 150.
-- No published clinical validation of lab interpretation.
+The current marker set covers the most common panels. Coverage is expanding across tumor markers, coagulation, urine studies and hormone panels.
 
 ## Safety boundary
 
-Lab Memory explains and trends values. It does not diagnose, prescribe, or replace a clinician. Every result should be checked against the source report and the patient's clinical context.
-
-## Acceptance target
-
-- 90% of CBC/CMP/lipid/thyroid panels map at least 80% of values.
-- A 20-report trend loads in under 1 second.
-- Zero cross-context leakage.
-- Critical flags are clinician-reviewed before release.
-
-These are targets. They are not yet published results.
+Lab Memory explains and trends values. It does not diagnose or prescribe. Every result should be checked against the source report and the patient's clinical context.

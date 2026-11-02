@@ -1,6 +1,6 @@
 ---
 name: Documentation correction
-about: Correct an app, API, safety, or roadmap document
+about: Correct an app, API, results, or safety document
 title: "[Docs] "
 labels: documentation
 assignees: ""
