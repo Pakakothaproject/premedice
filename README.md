@@ -44,7 +44,7 @@ That is the difference between a chat demo and a clinical workflow.
 
 The thing Premedice does best is track warning signals **earlier**. It follows labs, medications, symptoms and history over time and surfaces the small changes that are easy to miss in a short appointment.
 
-Not because clinicians are careless ? because a 10-minute visit cannot hold the whole record. Premedice keeps watching the record between visits and puts the signal in front of the patient and the clinician.
+Not because clinicians are careless — because a 10-minute visit cannot hold the whole record. Premedice keeps watching the record between visits and puts the signal in front of the patient and the clinician.
 
 ---
 
@@ -108,14 +108,33 @@ curl https://api.premedice.com/v1/chat/completions \
   -H "Authorization: Bearer pm_live_YOUR_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "premedice-1",
+    "model": "Premedice/Premed-4",
     "messages": [
       {"role": "user", "content": "Explain these lab results and flag what should be discussed with a clinician."}
     ]
   }'
 ```
 
-See the API documentation at [api.premedice.com](https://api.premedice.com) and the [Premedice 1 docs](docs/premedice-1/).
+See the API documentation at [api.premedice.com](https://api.premedice.com) and the [Premedice 4 API docs](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/api.md).
+
+---
+
+## Documentation
+
+- [Architecture](docs/architecture.md) — care contexts, record, tools, evidence, doctor sharing, briefs.
+- [Lab Memory](docs/lab-memory.md) — what is parsed, what is supported, and what is still missing.
+- [Clinical Evaluation](docs/clinical-evaluation.md) — what will be measured before any accuracy claim.
+- [Trust and Safety](docs/trust-and-safety.md) — emergency use, evidence checks, doctor sharing, data safety.
+- [API and MCP](docs/api-and-mcp.md) — endpoints, model ID, authentication, preview limits.
+- [Roadmap](docs/roadmap.md) — now, next, later, not planned.
+
+---
+
+## Evaluation status
+
+Premedice has no published clinical accuracy benchmark. The evaluation protocol is public; results are not yet available. The product is decision support, not a diagnosis.
+
+See [Clinical Evaluation](docs/clinical-evaluation.md).
 
 ---
 
