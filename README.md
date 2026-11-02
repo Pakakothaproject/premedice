@@ -109,7 +109,7 @@ curl https://api.premedice.com/v1/chat/completions \
   }'
 ```
 
-See the API documentation at [api.premedice.com](https://api.premedice.com) and the [Premedice 1 docs](https://github.com/Pakakothaproject/premedice-api).
+See the API documentation at [api.premedice.com](https://api.premedice.com) and the [Premedice 1 docs](docs/premedice-1/).
 
 ---
 
