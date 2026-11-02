@@ -111,7 +111,7 @@ See the API documentation at [api.premedice.com](https://api.premedice.com) and 
 
 ## Documentation
 
-- [What Premedice delivers](docs/results.md)
+- [What Premedice delivers](docs/results.md)`n- [Premedice 4 benchmark comparison](https://github.com/Pakakothaproject/premedice-4/blob/main/docs/comparison.md)
 - [Lab Memory](docs/lab-memory.md)
 - [Trust and Safety](docs/trust-and-safety.md)
 - [API and MCP](docs/api-and-mcp.md)
