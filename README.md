@@ -40,6 +40,12 @@ Then it returns a plain-English answer with sources, keeps the record over time,
 
 That is the difference between a chat demo and a clinical workflow.
 
+### Earlier warning tracking
+
+The thing Premedice does best is track warning signals **earlier**. It follows labs, medications, symptoms and history over time and surfaces the small changes that are easy to miss in a short appointment.
+
+Not because clinicians are careless ? because a 10-minute visit cannot hold the whole record. Premedice keeps watching the record between visits and puts the signal in front of the patient and the clinician.
+
 ---
 
 ## What it does
